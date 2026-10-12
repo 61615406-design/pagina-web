@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destino · Andes Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="destino">
+  <div id="site-header"></div>
+  <main class="page">
+    <div class="container detail">
+      <div>
+        <div class="detail-hero"><img id="d-img" alt=""></div>
+        <div class="panel" style="margin-top:16px">
+          <h1 id="d-name" class="page-title"></h1>
+          <p class="page-subtitle" id="d-loc"></p>
+          <p><strong>Calificación:</strong> <span id="d-rating"></span></p>
+          <p id="d-desc" style="margin-top:12px"></p>
+        </div>
+      </div>
+      <aside class="booking">
+        <p class="page-subtitle" style="margin:0">Desde</p>
+        <div class="price" id="d-price"></div>
+        <p class="page-subtitle">Duración sugerida: <span id="d-dur"></span></p>
+        <form id="book-form">
+          <div class="field"><label>Fecha de salida</label><input type="date" required></div>
+          <div class="field"><label>Viajeros</label><input type="number" min="1" value="2" required></div>
+          <div class="field"><label>Nombre</label><input type="text" required></div>
+          <div class="field"><label>Correo</label><input type="email" required></div>
+          <button class="btn btn-orange" type="submit">Solicitar reserva</button>
+        </form>
+        <div class="form-msg" id="book-msg"></div>
+      </aside>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

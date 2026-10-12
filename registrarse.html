@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse · Andes Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="registro">
+  <div id="site-header"></div>
+  <main class="auth-wrap">
+    <form class="auth-card" id="auth-form">
+      <h1>Registrarse</h1>
+      <p class="lead">Crea tu cuenta y arma tu próximo viaje por los Andes.</p>
+      <div class="field"><label>Nombre</label><input required></div>
+      <div class="field"><label>Correo</label><input type="email" required></div>
+      <div class="field"><label>Contraseña</label><input type="password" required minlength="6"></div>
+      <button class="btn btn-orange" type="submit">Crear cuenta</button>
+      <div class="form-msg" id="auth-msg"></div>
+      <p class="auth-alt">¿Ya tienes cuenta? <a href="ingresar.html">Ingresar</a></p>
+    </form>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
